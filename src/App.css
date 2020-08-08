@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: dodgerblue;
+  padding: 50px;
+}
+
+.mainWrapper {
+  position: relative;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+  color: white;
+}
+
+h3 {
+  background-color: white;
+  color: dodgerblue;
+}
+
+h4 {
+  font-size: 4em;
+  color: white;
+  font-family: 'Anton', sans-serif;
+  text-shadow: 4px 4px 4px #000;
+  transition: all 0.4s;
+}
+
+.title {
+  background: dodgerblue;
+  position: absolute;
+  padding: 30px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.result-display {
+  position: absolute;
+  top: calc(100vh - 600px);
+}
+
+.fa-hand-scissors,
+.fa-hand-paper,
+.fa-hand-rock {
+  color: white;
+}
+
+.title h1 {
+  color: white;
+  font-size: 2vw;
+  font-family: 'Anton', sans-serif;
+}
+
+.selection {
+  display: flex;
+}
+
+.selection li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 30px;
+  transition: background 0.4s;
+}
+
+.button-switch {
+  outline: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  background-color: white;
+  color: dodgerblue;
+  cursor: pointer;
+  border: none;
+  font-family: 'Anton', sans-serif;
+  font-size: 1.2em;
+  transition: all 0.2s linear;
+  margin-top: 30px;
+}
+
+.button-switch:hover {
+  background-color: pink;
+}
+
+.selection li:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+p {
+  padding: 25px;
+  color: #fff;
+  transition: color 1s;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+p span {
+  font-size: 1em;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.score-board {
+  display: flex;
+  flex-direction: row;
+}
+
+#robot {
+  text-align: left;
+}
+
+.wrapper-flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user,
+.computer {
+  padding: 40px;
+  width: 300px;
+  color: white;
+}
+
+.user i,
+.computer i {
+  margin-right: 10px;
+}
